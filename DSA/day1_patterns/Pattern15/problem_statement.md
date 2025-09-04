@@ -11,11 +11,15 @@ Print the pattern in the function given to you.
 Examples:
 
 Input: n = 4
+
 Output:
+
 ![Output](image.png)
 
 Input: n = 2
+
 Output:
+
 ![Output](image-1.png)
 
 Constraints:
