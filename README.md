@@ -1,4 +1,4 @@
-# My Journey to Become an Amazon SDE
+# My Journey to Become an Amazon SDE 
 
 Hello! My name is Aakash Chettay, and this repository documents my preparation journey to land a Software Development Engineer (SDE) role at Amazon as an experienced professional. I am currently working at Accenture and am committed to this goal.
 
