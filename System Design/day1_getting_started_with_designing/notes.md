@@ -32,3 +32,46 @@ __Cyclic References:__ A standalone object A pointing to another standalone obje
 **Tricky MCQ's**
 ![1](image-2.png)
 ![2](image-3.png)
+
+
+
+**Intro to LLD**
+__Defination:__ LLD is where code your code going to take shape. It's a bridge between architecture and actual implementation.
+__Key Characterstics:__
+* Granular and Code-level
+* Implementation-Focused
+* Applies OOP Principles
+
+__Importance of LLD:__
+* Avoids Reworks
+* Improves Collaboration
+* Promotes Scalability
+* Encourage Best Practices
+
+**Principles of Software Design**
+1. DRY (Don't Repeat Yourself)
+    __Importance:__
+    * Reduces Redundancy
+    * Easier Maintance
+    * Single point of change
+    __When not to use:__
+    * Premature Abstraction
+    * Performance Critical Code 
+    * Sacrificing Readability
+    * Legacy Code
+
+2. KISS (Keep it simple, stupid)
+    __Importance:__
+    * Easier Debugging
+    * Better Maintainability
+    * Good Readability
+    * Faster Development
+
+3. YAGNI (You aren't gonna need it)
+    __Importance:__
+    * Better Codebase
+    * Reduce Waste
+    * Faster Development
+    __When not to follow:__
+    * Well known requirements
+    * Performance Critical Areas
