@@ -19,3 +19,7 @@
     * When bussiness rules are likely to change as expand.
     * When you are building a plugin system.
     * When your codebase is becoming God Class with lots of conditionals.
+
+3. **Liskov Substitution Principle(LSP)**
+    __Defination:__ If S is a subtype of T, then objects of type T may be replaced with objects of type S without altering the correctness of the program.
+    __LSP is a bit difficult to deal with. Refer any source for revison, nothing to note here.__
