@@ -24,3 +24,6 @@
     * Reusability: Code becomes reusable since it's not tightly bound to one specific implementation.
     * Maintainability: Makes it easier to change one part of the system without affecting others.
     * Scalability: You can scale or upgrade parts of your codebase     without a massive rewrite.
+
+**Unified Modeling Language(UML)**
+__Defination:__ UML is a standardized visual language used to model and document the designs of the software systems. 
