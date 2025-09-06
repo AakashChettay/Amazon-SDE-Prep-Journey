@@ -26,4 +26,6 @@
     * Scalability: You can scale or upgrade parts of your codebase     without a massive rewrite.
 
 **Unified Modeling Language(UML)**
-__Defination:__ UML is a standardized visual language used to model and document the designs of the software systems. 
+    __Defination:__ UML is a standardized visual language used to model and document the designs of the software systems. 
+    * UML includes Structural and Bevahioural diagrams.
+    * But right now, we mailnly need one of the Structural diagram that is __Class Diagram__.
