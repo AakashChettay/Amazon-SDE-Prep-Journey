@@ -19,7 +19,7 @@ __Class Notation:__
         ![Interface Rep](image-4.png)<br><br>
         __Abstract Class Representation:__<br>
         ![Abs Class Rep](image-2.png)<br><br>
-        Abstract class is denoted in italic foramt<br><br>
+* Abstract class is denoted in italic foramt<br><br>
     __Relationship and their denotion with example:__<br><br>
         ![Figure](image-5.png)
 
