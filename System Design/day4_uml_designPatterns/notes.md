@@ -14,7 +14,7 @@ __Class Notation:__
         Package ~<br><br>
     __Attribute & Method Syntax:__<br>
         __Attribute:__ visibility name: Type [multiplicity] = DefaultValue (Ex: + age: int = 21)<br>
-        __Method:__ visibility name(parameterName1: Type1,...): ReturnType (Ex: - isAdult(age:int): boolean)<br>
+        __Method:__ visibility name(parameterName1: Type1,...): ReturnType (Ex: - isAdult(age:int): boolean)<br><br>
         __Interface Representation:__<br>
         ![Interface Rep](image-4.png)<br><br>
         __Abstract Class Representation:__<br>
