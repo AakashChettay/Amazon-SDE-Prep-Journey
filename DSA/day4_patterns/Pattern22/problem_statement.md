@@ -7,7 +7,7 @@ Examples:
 Input: n = 4
 
 Output:<br><br>
-![Out1](image.png)
+![out1](image.png)
 
 Input: n = 2
 
