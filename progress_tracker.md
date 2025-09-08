@@ -5,7 +5,7 @@
 - 🔄 This Week: 7 problems
 
 ## System Design (LLD)
-- ✅ Patterns Mastered: 0 / 23
+- ✅ Patterns Mastered: 1 / 23
 - 🔄 Case Studies Completed: 0 / 15
 
 ## Weekly Goal
@@ -14,4 +14,4 @@
 - [ ] Revise OOPS, LLD(up to date) and have full mock on it
 
 ---
-_Updated: 2025-09-07_
+_Updated: 2025-09-08_
