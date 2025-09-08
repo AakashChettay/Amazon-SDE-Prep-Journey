@@ -157,7 +157,7 @@ The Factory Pattern typically consists of the following components:
 2. **Concrete Products**: The concrete classes that implement the Product interface.
 3. **Factory**: A class with a method that returns different concrete products based on input.<br><br>
 ```
-// Logistics Interface
+// Logistic Interface
 interface Logistics {
     void send();
 }
@@ -178,20 +178,29 @@ class Air implements Logistics {
     }
 }
 
-// Class implementing Logistics Service
-class LogisticsService {
-    public void send(String mode) {
-        if (mode.equals("Air")) {
-            Logistics logistics = new Air();
-            logistics.send();
-        } else if (mode.equals("Road")) {
-            Logistics logistics = new Road();
-            logistics.send();
+// Factory Class taking care of Logistics
+class LogisticsFactory {
+    public static Logistics getLogistics(String mode) {
+        if (mode.equalsIgnoreCase("Air")) {
+            return new Air();
+        } else if (mode.equalsIgnoreCase("Road")) {
+            return new Road();
         }
+        throw new IllegalArgumentException("Unknown logistics mode: " + mode);
     }
 }
 
-// Driver code
+// Class implementing the Logistics Services
+class LogisticsService {
+    public void send(String mode) {
+        /* Using the Logistics Factory to get the 
+        desired object based on the mode */
+        Logistics logistics = LogisticsFactory.getLogistics(mode);
+        logistics.send();
+    }
+}
+
+// Driver Code
 class Main {
     public static void main(String[] args) {
         LogisticsService service = new LogisticsService();
@@ -199,8 +208,12 @@ class Main {
         service.send("Road");
     }
 }
+
 ```
 **Pros and Cons**<br><br>
 ![fig1](image.png)<br><br>
 **Class Diagram**
-![fig2](image-1.png)
+![fig2](image-1.png)<br><br>
+**Payments Factory Pattern Class Diagram**<br><br>
+![fig3](image-2.png)<br><br>
+**Note:** Arrow is dotted between PaymentService and Payment. It's a dependency.
