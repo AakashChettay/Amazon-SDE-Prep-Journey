@@ -9,7 +9,7 @@
 - 🔄 Case Studies Completed: 0 / 15
 
 ## Weekly Goal
-- [ ] Complete Basic Module of TUF+
+- [ ] Complete Basic DSA Module of TUF+
 - [ ] Complete SQL Assignments
 - [ ] Revise OOPS, LLD(up to date) and have full mock on it
 
