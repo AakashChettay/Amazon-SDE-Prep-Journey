@@ -136,3 +136,71 @@ As discussed earlier, eager loading does not face thread safety issues. This app
 
 **Conclusion**
 The Singleton pattern can be a powerful tool when used appropriately, particularly for managing global states and shared resources. However, developers should be mindful of its drawbacks, especially regarding testing and maintainability. Consider alternatives or enhanced implementations (like dependency injection) where appropriate to maintain clean and scalable codebases.
+
+2. **Factory Method** <br><br>
+The Factory Pattern is a creational design pattern that provides an interface for creating objects but allows subclasses to alter the type of objects that will be created.<br><br>
+**When Should You Use It?**<br><br>
+We can use the Factory Pattern when:
+* The client code needs to work with multiple types of objects.
+* The decision of which class to instantiate must be made at runtime.
+* The instantiation process is complex or needs to be controlled.<br><br>
+**Real-World Analogy: Ordering Pizza**<br><br>
+Imagine you walk into a pizza shop and say, “I'd like a pizza.” The shop doesn't ask you to go into the kitchen and make it yourself. Instead, it asks, “Which type? Margherita? Pepperoni? Veggie?” Based on your choice, the kitchen (factory) creates the specific pizza for you and hands it over.<br><br>
+
+You (the client), don't care how it's made or what specific class of ingredients is used. You just want your pizza. The factory (kitchen) handles the creation logic behind the scenes.<br><br>
+
+This is exactly what the Factory Pattern does in code: it creates an object based on some input without exposing the instantiation logic to the client.<br><br>
+**Basic Structure of Factory Pattern**<br><br>
+The Factory Pattern typically consists of the following components:
+
+1. **Product**: It is an interface or abstract class that defines the methods the product must implement.
+2. **Concrete Products**: The concrete classes that implement the Product interface.
+3. **Factory**: A class with a method that returns different concrete products based on input.<br><br>
+```
+// Logistics Interface
+interface Logistics {
+    void send();
+}
+
+// Class implementing the Logistics Interface
+class Road implements Logistics {
+    @Override
+    public void send() {
+        System.out.println("Sending by road logic");
+    }
+}
+
+// Class implementing the Logistics Interface
+class Air implements Logistics {
+    @Override
+    public void send() {
+        System.out.println("Sending by air logic");
+    }
+}
+
+// Class implementing Logistics Service
+class LogisticsService {
+    public void send(String mode) {
+        if (mode.equals("Air")) {
+            Logistics logistics = new Air();
+            logistics.send();
+        } else if (mode.equals("Road")) {
+            Logistics logistics = new Road();
+            logistics.send();
+        }
+    }
+}
+
+// Driver code
+class Main {
+    public static void main(String[] args) {
+        LogisticsService service = new LogisticsService();
+        service.send("Air");
+        service.send("Road");
+    }
+}
+```
+**Pros and Cons**<br><br>
+![fig1](image.png)<br><br>
+**Class Diagram**
+![fig2](image-1.png)
