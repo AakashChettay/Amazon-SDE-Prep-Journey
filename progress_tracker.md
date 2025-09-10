@@ -5,7 +5,7 @@
 - 🔄 This Week: 22 problems
 
 ## System Design (LLD)
-- ✅ Patterns Mastered: 2 / 23
+- ✅ Patterns Mastered: 4 / 23
 - 🔄 Case Studies Completed: 0 / 15
 
 ## Weekly Goal
