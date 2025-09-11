@@ -1,8 +1,8 @@
 #  📊  Amazon SDE Prep Progress Tracker
 
 ## DSA
-- ✅ Total Solved: 22 / 300
-- 🔄 This Week: 22 problems
+- ✅ Total Solved: 26 / 300
+- 🔄 This Week: 26 problems
 
 ## System Design (LLD)
 - ✅ Patterns Mastered: 4 / 23
@@ -14,4 +14,4 @@
 - [ ] Revise OOPS, LLD(up to date) and have full mock on it
 
 ---
-_Updated: 2025-09-10_
+_Updated: 2025-09-11_
