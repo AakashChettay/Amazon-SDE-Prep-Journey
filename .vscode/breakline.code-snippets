@@ -1,9 +1,0 @@
-{
-    "Insert <br><br>": {
-        "prefix": "n",
-        "body": [
-            "<br><br>"
-        ],
-        "description": "Insert <br><br>"
-    }
-}
