@@ -1,0 +1,1 @@
+Sorry, I was not abled to anything related to System Design. So tired of other event. LLR exam was a grand success. I'll promise, i'll be doing double work on System Design.
