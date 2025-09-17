@@ -1,8 +1,8 @@
 #  📊  Amazon SDE Prep Progress Tracker
 
 ## DSA
-- ✅ Total Solved: 34 / 300
-- 🔄 This Week: 2 problems
+- ✅ Total Solved: 35 / 300
+- 🔄 This Week: 3 problems
 
 ## System Design (LLD)
 - ✅ Patterns Mastered: 6 / 23
@@ -16,3 +16,7 @@
 
 ---
 _Updated: 2025-09-16_
+
+
+
+A class should have only one reason to change. In other words, a class should only have one job, one responsibility, and one purpose. If a class takes more than one responsibility, it becomes coupled. This means that if one responsibility changes, the other responsibilities may also be affected, leading to a ripple effect of changes throughout the codebase.
