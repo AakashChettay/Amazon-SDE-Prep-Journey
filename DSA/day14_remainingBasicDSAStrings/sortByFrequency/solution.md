@@ -1,4 +1,5 @@
-/*#include<bits/stdc++.h>
+```
+#include<bits/stdc++.h>
 class Solution{	
 	public:
         static bool comparator(pair<int, char> p1, pair<int, char> p2)
@@ -27,4 +28,5 @@ class Solution{
             }
             return ans;
 		}
-};*/
+};
+```
