@@ -1,0 +1,63 @@
+Why SOLID principles? 
+
+
+The SOLID Principles are the first and most crucial step in mastering Low-Level Design. Most design interviews begin with foundational questions related to these principles because they allow interviewers to analyze a candidate's seriousness and determination in software design.
+
+So, here's my suggestion: don't just memorize definitions. Instead, start absorbing the actual concepts. True understanding of these principles is the essence of great software.
+
+
+
+What are SOLID principles? 
+SOLID principles are five object-oriented design principles, that help developers write software that is easier to understand, maintain, and extend.
+
+S - Single Responsibility Principle
+
+O - Open / Close Principle
+
+L - Liskov Substitution Principle
+
+I - Interface Segregation Principle
+
+D - Dependency Inversion Principle
+
+
+
+1. Single Responsibility Principle: 
+A class should have only one reason to change. In other words, a class should only have one job, one responsibility, and one purpose. 
+
+If a class takes more than one responsibility, it becomes coupled. This means that if one responsibility changes, the other responsibilities may also be affected, leading to a ripple effect of changes throughout the codebase.
+
+Let's understand through a real time scenario.
+
+The Bank Analogy:
+
+![Bank](Gemini_Generated_Image_71b9f471b9f471b9.png)
+
+Imagine a traditional bank where there's a different counter for each task: one for deposits, another for withdrawals, a third for loans, and so on. Each counter has a single responsibility, which makes the entire process fast and efficient. If there's an issue with a loan application, the manager can go directly to the loan counter to debug and solve the problem.
+
+Now, imagine if there was only a single counter handling all tasks—deposits, withdrawals, and loans. That counter would be incredibly slow, error-prone, and a nightmare to manage. If a loan issue comes up, a person would have to sort through all the deposit and withdrawal paperwork just to find the issue.
+
+This is exactly how the SRP works in software. By breaking down a large, complicated class into smaller, single-purpose classes, you make your code easier to debug, more efficient, and far more maintainable.
+
+In simple terms, the SRP teaches us that a well-designed class does one thing and does it well. It's the first step towards writing code that is easy to manage, debug, and reuse.
+
+
+
+2. Open / Close Principle:
+As per OCP, Software entities (classes, modules, functions, etc.) should be open for extension, but closed for modification.
+
+This means that the behavior of a module can be extended without modifying its source code. The goal is to reduce the risk of breaking existing functionality when requirements change.
+
+Let's understand through a real time scenario.
+
+The Travel Adapter Analogy:
+
+![Adapter](Gemini_Generated_Image_uc2uvbuc2uvbuc2u.png)
+
+Imagine you're a traveler from India, and you've brought your favorite phone charger with you. You arrive in the US, but you quickly find a problem: your Indian charger's plug isn't fitting into the US wall socket. You can't change your charger, and you certainly can't modify the hotel's electrical outlet. Both are "closed for modification."
+
+The simple solution is to buy a travel adapter. You plug the adapter into the wall, and your Indian charger into the adapter. Your system (the charger) has now been extended to work in a new environment, and you didn't have to change a single thing about it.
+
+This is the essence of OCP. By using an adapter, you've created a flexible system that can easily handle new requirements without causing a ripple effect of changes. It's a key principle for building software that can grow and evolve gracefully.
+
+In a technical context, the Open/Closed Principle is achieved through abstractions. By programming to an interface, you ensure that new functionality can be added by creating a new concrete class that implements that interface. This practice keeps your existing code "closed" and untouched, making your entire codebase more stable and less prone to regression bugs every time a new feature is added.
