@@ -10,8 +10,8 @@
 - 🏹 Mock MCQ's Taken: 0 / 5
 
 ## Weekly Goal
-- [❌] Target DP Problems 
-- [❌] Complete SQL Assignments
+- [] Target DP Problems 
+- [] Complete SQL Assignments
 - [✅] A creative blog on SOLID Principles
 
 ---
