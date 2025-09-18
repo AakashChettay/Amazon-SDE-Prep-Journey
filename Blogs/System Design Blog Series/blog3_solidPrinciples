@@ -1,5 +1,6 @@
-Why SOLID principles? 
+![Fig 1](image-4.png)
 
+Why SOLID principles? 
 
 The SOLID Principles are the first and most crucial step in mastering Low-Level Design. Most design interviews begin with foundational questions related to these principles because they allow interviewers to analyze a candidate's seriousness and determination in software design.
 
@@ -61,3 +62,78 @@ The simple solution is to buy a travel adapter. You plug the adapter into the wa
 This is the essence of OCP. By using an adapter, you've created a flexible system that can easily handle new requirements without causing a ripple effect of changes. It's a key principle for building software that can grow and evolve gracefully.
 
 In a technical context, the Open/Closed Principle is achieved through abstractions. By programming to an interface, you ensure that new functionality can be added by creating a new concrete class that implements that interface. This practice keeps your existing code "closed" and untouched, making your entire codebase more stable and less prone to regression bugs every time a new feature is added.
+
+
+3. **Liskov Substitution Principle (LSP)**
+
+The Liskov Substitution Principle states that subtypes must be substitutable for their base types without altering the correctness of the program. This means that a child class should be able to step in for its parent class and work perfectly. If the child breaks the expected behavior of the parent, it violates LSP.
+
+Let's make this tricky principle more "connective" with an example.
+
+**The Master Chef Analogy:**<br><br>
+
+![fig 3](image-1.png)
+
+Imagine a world-famous chef who is hired by a huge catering company. The company has a custom "Dish-Making Machine" that has been built to work with this chef's exact cooking process. All the machine knows is that the chef has a method called prepare_dish(ingredients, recipe).
+
+Now, the famous chef trains two students.
+
+* **Violating LSP (The "Shortcut Chef"):** One student, the "Shortcut Chef," tries to be clever. He creates his own prepare_dish() method but secretly requires a third argument: a special magic_spice that the company's Dish-Making Machine doesn't have. When the company tries to use him as a substitute for the famous chef, the machine breaks down. The "Shortcut Chef" promised to be a substitute but broke the machine's expected behavior by requiring an extra argument.
+
+* **Following LSP (The "Indian Cuisine Chef"):** Another student, the "Indian Cuisine Chef," also has a prepare_dish() method. He adds his own unique spices and techniques, giving the dish a completely different flavor. But importantly, he still uses the same inputs as the famous chef, and his method never causes the Dish-Making Machine to fail. The company can swap the famous chef with the Indian Cuisine Chef at any time, and the machine continues to work flawlessly.
+
+This is exactly what LSP is about. It ensures that when you create new child classes, they won't cause unexpected problems for the rest of your system.
+
+4. **Interface Segregation Principle (ISP): **
+
+It says: "Don't force a class to depend on methods it does not use."
+
+The Interface Segregation Principle states that no client should be forced to depend on methods it does not use. In simpler terms, this means that we should prefer many small, specific interfaces over one large, "fat" one.
+
+Let's understand this with a real-time scenario.
+
+**The Domino's App Analogy:**<br><br>
+
+![fig 4](image-2.png)
+
+Imagine the Domino's app. This single app is used by two very different types of users: a Customer and a Delivery Driver.
+
+Now, imagine if both the customer and the delivery driver had to use a single, massive interface with every possible function. The customer would see functions like getDriverLocation(), updateDeliveryStatus(), and acceptPayment(), which are completely irrelevant to them. This would be confusing, frustrating, and a prime example of a "fat interface."
+
+Domino's follows ISP. The customer's version of the app only shows the functions they need: selectPizza(), placeOrder(), and trackOrder(). The delivery driver's version, on the other hand, shows the functions they need: acceptDelivery(), updateLocation(), and markAsDelivered().
+
+By segregating the large interface into smaller, more specific ones, the Domino's app becomes easy to use, and each user's experience is tailored to their specific needs.
+
+5. **Dependency Inversion Principle (DIP):**
+To understand the Dependency Inversion Principle, let's first clarify three key concepts:
+
+1. **High-Level Modules:** These are the "brains" of your application. They contain the core logic and make big decisions, coordinating how different features work together.
+
+2. **Low-Level Modules:** These are the "workhorses" that handle the detailed, specific tasks, like talking to a database, making API calls, or reading files.
+
+3. **Abstraction** 
+
+The Dependency Inversion Principle states that High-Level Modules should not depend on Low-Level Modules. Both should depend on abstractions.
+
+In simpler terms, rather than high-level classes controlling and depending on the details of lower-level ones, both should rely on an interface or an abstract class. This makes your code flexible, testable, and easier to maintain.
+
+**The Video Player Analogy:**
+
+![fig 5](image-3.png)
+
+Imagine you are building a video player app. Your app's core purpose (the high-level module) is to play videos, manage playback, and display controls. The video sources—like YouTube or Prime Video—are the low-level modules that provide the raw video data.
+
+**Violating DIP (The Problem):** You design your video player to only work directly with YouTube's specific API. You might have code that says new YouTubeVideoAPI().getVideoData(). Your high-level video player is now tightly coupled to the low-level YouTube API. If you later want to support Prime Video, you have to go back and rewrite your core player logic to work with a completely different API.
+
+**Following DIP (The Solution):** You introduce an abstraction: an IStreamingService interface with a simple method like getVideoData(). Now, your video player doesn't care if the video comes from YouTube or Prime Video. It only knows how to interact with the IStreamingService interface. Both the YouTubeService and the PrimeVideoService are low-level modules that implement this same interface.
+
+This is the power of Dependency Inversion. Your high-level video player logic is now completely independent of the specific video source. You can easily plug in a new streaming service without ever having to touch your core player code.
+
+**Conclusion:**
+So there you have it: the 5 SOLID Principles.
+
+By applying the lessons from our bank counters, travel adapters, master chefs, and streaming apps, you can write code that is not just functional, but also robust, flexible, and easy to maintain. These principles are the bedrock of Low-Level Design and a critical step in your journey to become a software architect.
+
+Now that we've covered the principles, I have a question for you. Did you enjoy the use of real-life analogies to explain the concepts, or would you prefer me to go a little more into code-oriented explanations in future posts? Let me know in the comments below!
+
+Let's meet next Sunday, with our first pattern, the Singleton.
