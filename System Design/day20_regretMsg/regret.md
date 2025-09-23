@@ -1,0 +1,1 @@
+Sorry for myself, i was failed atleast to revise one pattern. I was occupied with HIGH PRIORITY issues which were related to life. Give your best, for tomorrow.
