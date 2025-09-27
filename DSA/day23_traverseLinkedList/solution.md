@@ -1,3 +1,4 @@
+```
 /*
 Definition of singly linked list:
 struct ListNode
@@ -22,6 +23,7 @@ struct ListNode
 };
 */
 
+#include <vector>;
 class Solution {
 public:
     vector<int> LLTraversal(ListNode *head) {
@@ -36,3 +38,4 @@ public:
 
     }
 };
+```
