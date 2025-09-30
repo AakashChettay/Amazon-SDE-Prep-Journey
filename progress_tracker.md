@@ -8,7 +8,8 @@
 # week 3: 4
 
 ## System Design (LLD)
-- ✅ Patterns Mastered: 6 / 23
+- 🔄 Patterns Learnt: 9/ 23
+- ✅ Patterns Mastered: 1 / 23
 - 🔄 Case Studies Completed: 0 / 15
 - 🏹 Mock MCQ's Taken: 0 / 5
 
