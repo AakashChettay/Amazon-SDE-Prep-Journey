@@ -1,8 +1,8 @@
 #  📊  Amazon SDE Prep Progress Tracker
 
 ## DSA
-- ✅ Total Solved: 49 / 300
-- 🔄 This Week: 2 problems
+- ✅ Total Solved: 51 / 300
+- 🔄 This Week: 4 problems
 
 # week 2: 13
 # week 3: 4
@@ -19,7 +19,7 @@
 - [✅] A creative blog on SOLID Principles
 
 ---
-_Updated: 2025-09-30 _
+_Updated: 2025-10-01 _
 
 
 
