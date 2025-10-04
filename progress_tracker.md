@@ -1,8 +1,8 @@
 #  📊  Amazon SDE Prep Progress Tracker
 
 ## DSA
-- ✅ Total Solved: 51 / 300
-- 🔄 This Week: 4 problems
+- ✅ Total Solved: 52 / 300
+- 🔄 This Week: 5 problems
 
 # week 2: 13
 # week 3: 4
