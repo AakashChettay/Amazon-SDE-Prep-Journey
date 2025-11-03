@@ -1,0 +1,44 @@
+Moore's Voting Algo:
+Approach:
+* Initialize 2 variables: countfor tracking the count of elements and element for keeping a track of the element we are counting.
+* Traverse through the given array. If count is 0 then store the current value of the array as element .
+* If the current array value andelement are the same increase the count by 1. If they are different decrease the count by 1. The integer present in element should be the result expected.
+
+Majority Element(Optimal Approach using Moore's Voting Algo)
+
+class Solution {
+public:
+    int majorityElement(vector<int>& nums) {
+        int majEle = -1;
+        int cnt = 0;
+        for(int i=0; i<nums.size(); i++)
+        {
+            if(cnt == 0)
+            {
+                majEle = nums[i];
+                cnt++;
+            }
+            else if(majEle == nums[i])
+            {
+                cnt++;
+            }
+            else{
+                cnt--;
+            }
+        }
+        int cnt1 = 0;
+        for(int i=0; i<nums.size();i++)
+        {
+            if(majEle == nums[i])
+            {
+                cnt1++;
+            }
+        }
+        if(cnt1 > (int) (nums.size()/2))
+            return majEle;
+        
+        return -1;
+
+        
+    }
+};
