@@ -4,7 +4,7 @@ Approach:
 * Traverse through the given array. If count is 0 then store the current value of the array as element .
 * If the current array value andelement are the same increase the count by 1. If they are different decrease the count by 1. The integer present in element should be the result expected.
 
-Majority Element(Optimal Approach using Moore's Voting Algo)
+1. Majority Element(Optimal Approach using Moore's Voting Algo)
 
 class Solution {
 public:
@@ -40,5 +40,28 @@ public:
         return -1;
 
         
+    }
+};
+
+2. Leaders in an Array(Optimal)
+
+#include<algorithm>
+class Solution {
+public:
+    vector<int> leaders(vector<int>& nums) {
+        int maxi = INT_MIN;
+        vector<int> ans;
+        maxi = max(maxi, nums[nums.size()-1]);
+        ans.push_back(maxi);
+        for(int i=nums.size()-2; i>=0; i--)
+        {
+            if(nums[i] > maxi)
+            {
+                maxi = nums[i];
+                ans.push_back(maxi);
+            }
+        }
+        reverse(ans.begin(), ans.end());
+        return ans;
     }
 };
