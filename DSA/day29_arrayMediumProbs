@@ -1,4 +1,5 @@
 1. Pascal Traingle
+
 a. 1st variation- Find r, c combination
 class Solution {
 public:
@@ -14,7 +15,41 @@ public:
     }
 };
 
+T.C: O(c)
+S.P: O(1)
+
 * To find it, we can use NcR formula, where N = r-1, R = c-1. To avoid huge factorial calculations using loops, we find an
   observation and implement logic based on it. (Running loop R times)
+
+b. 2nd variation, find entrire rth row.
+
+Better:
+class Solution {
+public:
+    int pascalTriangleI(int r, int c) {
+        long long ans = 1;
+        int N = r-1, R = c-1; 
+        for(int i=0; i<R; i++)
+        {
+            ans = ans * (N-i);
+            ans = (int) ans / (i+1);
+        }
+        return ans;
+    }
+    vector<int> pascalTriangleII(int r) {
+        vector<int> ans;
+        int N = r;
+        for(int i = 1; i <= r; i++)
+        {
+            //cout<<N<<" "<<i<<endl;
+            ans.push_back(pascalTriangleI(N, i));
+        }
+        return ans;
+    }
+};
+
+T.C: O(r*c)
+S.C: O(1) [As we don't count ans array]
+
 
 
