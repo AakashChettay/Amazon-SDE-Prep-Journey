@@ -51,5 +51,24 @@ public:
 T.C: O(r*c)
 S.C: O(1) [As we don't count ans array]
 
+Optimal: 
+class Solution {
+public:
+    vector<int> pascalTriangleII(int r) {
+        vector<int> res;
+        long long ans = 1;
+        res.push_back(ans);
+        for(int i=1; i<r; i++)
+        {
+            ans = ans * (r - i);
+            ans = ans / i;
+            res.push_back(ans);
+        }
+        return res;
+    }
+};
+
+T.C: O(r)
+S.C: O(1)
 
 
